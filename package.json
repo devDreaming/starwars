@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "webpack-dev-server",
     "build": "npx webpack --config webpack.config.prod.js",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
