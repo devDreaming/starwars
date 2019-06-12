@@ -8,9 +8,10 @@ const GoogleFontsPlugin = require('google-fonts-plugin')
 module.exports = function () {
     return {
         mode: 'production',
-        entry: [ 
-            './src/app.js'
-        ],
+        entry: {
+            polyfill: 'babel-polyfill',
+            app: './src/app.js'
+        },
         optimization: {
             minimizer: [
                 new OptimizeCSSAssetsPlugin()

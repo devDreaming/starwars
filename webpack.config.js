@@ -19,6 +19,9 @@ module.exports = function () {
             //   '**/*.scss', '/node_modules/'
             // ]
         },
+        output: {
+            path: path.resolve(__dirname, "dist")
+        },
         devtool: 'source-maps',
         devServer: {
             contentBase: path.join(__dirname, 'src'),
@@ -36,7 +39,7 @@ module.exports = function () {
             new GoogleFontsPlugin({
                 fonts: [
                     { "family": "Kanit", "variants": ["400", "400i", "700", "700i"] }
-                ] 
+                ]
             })
         ],
         module: {
